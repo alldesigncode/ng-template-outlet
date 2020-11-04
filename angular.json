@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-template-outlet"
+    }
+  },
+  "defaultProject": "angular-template-outlet",
+  "cli": {
+    "analytics": false
+  }
 }
