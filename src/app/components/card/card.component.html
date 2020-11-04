@@ -1,0 +1,25 @@
+<ng-container *ngIf="data">
+  <div class="card" [ngClass]="data.color">
+    <div class="card-icon-header">
+      <div class="icon-container">
+        <svg class="icon">
+          <use attr.xlink:href="./assets/icons.svg#{{ data.iconName }}"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card-content">
+      <div class="card-title">
+        <h4>{{ data.title }}</h4>
+      </div>
+      <div class="card-total">
+        <span class="total">{{ data.amount }}</span>
+        <div class="percent-wrapper">
+          <svg class="icon-arrow-up">
+            <use href="./assets/icons.svg#icon-arrow-thin-up"></use>
+          </svg>
+          <span class="percent">{{ data.amount }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
